@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ENC221-0098/2018</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <style>
+    #map {
+      height: 700px;
+      left:0;
+    }
+    .bar{
+      background-color: #555;
+      margin: 0;
+    }
+    .shead{
+      color:white;
+      text-align: center;
+      width: 100%;
+      
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <h1 class="shead"><b>MALLS IN WESTLANDS</b></h1>
+  </div>
+  <div id="map"></div>
+
+  <script>
+    // Initialize the map
+    var map = L.map('map').setView([-1.256100, 36.801904], 16);
+
+    // Add the tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+      maxZoom: 18,
+    }).addTo(map);
+
+    // Add markers with custom popups
+    var marker1 = L.marker([-1.2641834556048896, 36.80280778848246]).addTo(map);
+    marker1.bindPopup("<b>The Mall</b>").openPopup();
+    var marker2 = L.marker([-1.2567849698688198, 36.80320003334812]).addTo(map);
+    marker2.bindPopup("<b>The Westlands Mall</b>").openPopup();
+    var marker3 = L.marker([-1.260640601019199, 36.80407466626058]).addTo(map);
+    marker3.bindPopup("<b>Ananas Mall Westlands</b>").openPopup();
+    var marker4 = L.marker([-1.2596303993571611, 36.80111550296903]).addTo(map);
+    marker4.bindPopup("<b>Sarit Center</b>").openPopup();
+    var marker5 = L.marker([-1.2636712036523892, 36.804760326047656]).addTo(map);
+    marker5.bindPopup("<b>Woodvale Plaza</b>").openPopup();
+
+
+  </script>
+</body>
+</html>
