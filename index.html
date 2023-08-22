@@ -1,58 +1,136 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ENC221-0098/2018</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-  <style>
-    #map {
-      height: 700px;
-      left:0;
-    }
-    .bar{
-      background-color: #555;
-      margin: 0;
-    }
-    .shead{
-      color:white;
-      text-align: center;
-      width: 100%;
-      
-    }
-    
-    
-  </style>
-</head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="MobileStyleSheet.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px) , only screen and (-webkit-min-device-pixel-ratio: 2) , screen and (-webkit-device-pixel-ratio:1.5)" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>ROAD SAFETY MEASURES</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="stylee.js"></script>
+     <meta name="viewport" content="width=device-width,initial-scale=1.o"
+ </head>
 <body>
-  <div class="bar">
-    <h1 class="shead"><b>MALLS IN WESTLANDS</b></h1>
-  </div>
-  <div id="map"></div>
+    <section>
+    <style>
+        body{
+            background-image: url(back1);
+            background-size: contain;
+        }
+    </style>
+    
+     <div class="banner">
+        <div class="navbar">
+        
+            <img src="image 1.jpg" class="logo">
+            <ul>
+            <li><a href="#">Home</a></li>
+              <li><a class="active" href="about.html">About</a></li>
+              <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+      
+        <div class="content">
+            <h1>ROAD SAFETY</h1>
+            <P>This site seeks to provide road safety measures for both pedestrians and motorists with an an aim
+                to protect human life and save more people from accidents.
+                 <br>Tap for more information</P>
+                 <div>
+                  
+                  <button><a href="#sec-intro"><span></span>Discover More</a></button>
+                    <!-- <button type="button"><span></span>Discover More</button> -->
+                 </div>
+        </div>
+     </div>
+    </section>  
+        <section class="sec-intro">
+            <div class="col">
+              <p>This is a user-friendly platform dedicated to advocating road safety measures for pedestrians, cyclists, and drivers.
+                It serves as an educational hub, offering a range of informative content, interactive features, and practical resources.</p>
+                 <p>The website encompasses dedicated sections for pedestrians, cyclists, and drivers,
+                    providing tailored information and guidelines for each group.
+                    These sections contain educational articles and infographics to enhance users' 
+                    understanding of road safety principles and practices.
+                </p>
+              <img src="images2.png" width="auto" height="300" alt="person">
+              <figcaption>STAY SAFE</figcaption>
+              <p>We care about your safety and we are just a click away.</p>
+            </div>
+ </section> <!-- .sec-intro -->
+          <section class="sec-core-services">
+            <h2>Highlights of the Web Page</h2>
+            <div class="sec-core-services-wrapper">
+              <div class="card">
+                <img src="image 5.jpg" width="200" height="150" alt="Safety First"/>
+                <h3>Safety First</h3>
+                <p>Through informative articles, tips, and resources, 
+                    we aim to empower individuals to make informed decisions while on the road. 
+                    Our goal is to create a community that prioritizes safe practices, respects traffic regulations,
+                     and ultimately ensures a safer environment for all road users.</p>
+              </div> <!-- .card -->
+              <div class="card">
+                <img src="image 3.jpg" width="200" height="150"  alt="Driving Safely">
+                <h3>Driving Safely</h3>
+                <p> Through informative articles, practical tips, and educational content, 
+                  We seek to equip drivers with the knowledge and skills necessary to make sound decisions behind the wheel.
+                We aim in promoting a culture of safe driving, where everyone can enjoy the freedom of the road
+                 while prioritizing the well-being of themselves and others</p>
+              </div> <!-- .card -->
+              <div class="card">
+                <img src="image 6.jpg" width="200" height="150" alt="Driving Safety Measures">
+                <h3>Driving Safety Measures</h3>
+                <p>Observe Traffic Laws: Always follow traffic rules, including speed limits, traffic signals, and road signs
+                   Buckle Up: Wearing seat belts is one of the simplest yet most effective ways to protect yourself and passengers in the event of a collision.
+                   Avoid Distractions: Keep your focus on the road and avoid distractions
+                   Maintain a Safe Distance: Keep a safe following distance between your vehicle and the one ahead of you
+                   Be Mindful of Speed: Adhere to speed limits and adjust your speed according to road and weather conditions
 
-  <script>
-    // Initialize the map
-    var map = L.map('map').setView([-1.256100, 36.801904], 16);
+                </p>
+              </div> <!-- .card -->
+              <div class="card">
+                <img src="image 4.jpg" width="200" height="150" alt="General Road Safety  Measures">
+                <h3>General Road Safety  Measures:</h3>
+                <p>Teach the Public on Road Safety: Educate people especially children about road safety rules
+                    Drivers to Yield to Pedestrians and Cyclists
+                    Obey Traffic Laws
+                </p>
+              </div> <!-- .card -->
+            </div> <!-- .sec-core-services-wrapper -->
+          </section> <!-- .sec-core-services -->      
+        
+     </section>
+    
 
-    // Add the tile layer
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-      maxZoom: 18,
-    }).addTo(map);
+     <footer>
+      <div class="footer-container">
+        <div class="footer-col">
+          <img src="image 1.jpg" alt="logo">
+          <p>Observe Road Safety rules.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contacts</h4>
+          <p><a href="email:nyabokejuliet78@gmail.com?subject=Enquiry&body=Question">Email me</a></p>
+          <p>Phone Number: <a href="tel:+254719990058">+254719990058</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Sitemap</h4>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>        
+        </div>
+      </div>
+      <div class="bottombar">Copyright © 2023 JULIET NYABOKE. All rights reserved.</div>
+    </footer>
+    
+  </body>
+  </html>
 
-    // Add markers with custom popups
-    var marker1 = L.marker([-1.2641834556048896, 36.80280778848246]).addTo(map);
-    marker1.bindPopup("<b>The Mall</b>").openPopup();
-    var marker2 = L.marker([-1.2567849698688198, 36.80320003334812]).addTo(map);
-    marker2.bindPopup("<b>The Westlands Mall</b>").openPopup();
-    var marker3 = L.marker([-1.260640601019199, 36.80407466626058]).addTo(map);
-    marker3.bindPopup("<b>Ananas Mall Westlands</b>").openPopup();
-    var marker4 = L.marker([-1.2596303993571611, 36.80111550296903]).addTo(map);
-    marker4.bindPopup("<b>Sarit Center</b>").openPopup();
-    var marker5 = L.marker([-1.2636712036523892, 36.804760326047656]).addTo(map);
-    marker5.bindPopup("<b>Woodvale Plaza</b>").openPopup();
 
-
-  </script>
-</body>
+ </body>
 </html>
